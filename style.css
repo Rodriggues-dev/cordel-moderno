@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordelina';
+    src: url(fonts/cordelina.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-padrao:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-cordelina: 'cordelina', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-cordelina);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 7vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+main {
+    font-family: var(--fonte-cordelina);
+    font-size: 2.5vw;
+}
+
+div {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+div > p {
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.comum {
+    background-color: white;
+}
+
+.imagem {
+    background-color: rgba(137, 43, 226, 0.329);
+    color: white;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.685);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+}
+
+#img-1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img-2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
